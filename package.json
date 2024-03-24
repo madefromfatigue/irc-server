@@ -1,6 +1,18 @@
 {
   "name": "@madefromfatigue/irc-server",
   "version": "0.0.0",
+  "type": "module",
   "description": "toy implementation of an irc server",
-  "author": "madefromfatigue"
+  "author": "madefromfatigue",
+  "scripts": {
+    "lint": "eslint ./src/**/*.ts",
+    "cspell": "cspell .",
+    "compile": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "@madefromfatigue/eslint-config": "^0.0.7",
+    "cspell": "^8.6.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.3"
+  }
 }
