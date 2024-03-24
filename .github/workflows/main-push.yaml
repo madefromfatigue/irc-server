@@ -1,0 +1,30 @@
+name: 'Push on Main Branch Workflow'
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  lint:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - name: 'Install development environment depedencies'
+        run: 'npm install'
+      - name: 'Run ESLint'
+        run: 'npm run lint'
+  cspell:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - name: 'Install development environment depedencies'
+        run: 'npm install'
+      - name: 'Run CSpell'
+        run: 'npm run cspell'
+  compile:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@v4'
+      - name: 'Install development environment depedencies'
+        run: 'npm install'
+      - name: 'Run Typescript Compiler'
+        run: 'npm run compile'
