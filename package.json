@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@madefromfatigue/eslint-config": "^0.0.7",
+    "@types/node": "^20.11.30",
     "cspell": "^8.6.0",
     "eslint": "^8.57.0",
     "typescript": "^5.4.3"
