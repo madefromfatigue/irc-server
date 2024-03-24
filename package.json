@@ -1,0 +1,6 @@
+{
+  "name": "@madefromfatigue/irc-server",
+  "version": "0.0.0",
+  "description": "toy implementation of an irc server",
+  "author": "madefromfatigue"
+}
